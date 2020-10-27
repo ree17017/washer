@@ -1,4 +1,4 @@
-#Washer
+Washer
 
 Create a washer that spins in any direction. Once the washer has started the spin cycle, the washer will reverse the spin after three full turns. 
 
