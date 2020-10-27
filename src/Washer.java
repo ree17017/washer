@@ -2,12 +2,13 @@ public class Washer {
 
     public static void main(String[] args){
          Washer washer = new Washer(true, true);
-
+         washer.spin();
+         System.out.println("##################################");
+         washer.setSpinDirection(false);
          washer.spin();
 
-         Washer washer1 = new Washer();
 
-         washer1.spin();
+        System.out.println(washer.spinDirection);
     }
 
     private boolean spinDirection;
@@ -16,12 +17,6 @@ public class Washer {
     public Washer(boolean spinDirection, boolean spinning) {
         this.spinDirection = spinDirection;
         this.spinning = spinning;
-
-    }
-    public Washer() {
-        spinDirection = false;
-        spinning = false;
-
     }
 
     void displayRight(){
@@ -47,9 +42,11 @@ public class Washer {
             if (isSpinDirection()) {
                 displayRight();
                 setSpinDirection(false);
+                spinDirection = false;
             } else {
                 displayLeft();
                 setSpinDirection(true);
+                spinDirection = true;
             }
         }
         done();
@@ -67,11 +64,11 @@ public class Washer {
         this.spinDirection = spinDirection;
     }
 
-    public boolean isSpinning() {
+    private boolean isSpinning() {
         return spinning;
     }
 
-    public void setSpinning(boolean spinning) {
+    private void setSpinning(boolean spinning) {
         this.spinning = spinning;
     }
 }
