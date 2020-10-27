@@ -3,9 +3,6 @@ public class Washer {
     public static void main(String[] args){
          Washer washer = new Washer(true, true);
          washer.spin();
-         System.out.println("##################################");
-         washer.setSpinDirection(false);
-         washer.spin();
 
 
         System.out.println(washer.spinDirection);
