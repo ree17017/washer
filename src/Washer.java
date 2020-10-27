@@ -39,11 +39,8 @@ public class Washer {
             if (isSpinDirection()) {
                 displayRight();
                 setSpinDirection(false);
-                spinDirection = false;
-            } else {
                 displayLeft();
                 setSpinDirection(true);
-                spinDirection = true;
             }
         }
         done();
