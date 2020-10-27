@@ -5,18 +5,20 @@ Create a washer that spins in any direction. Once the washer has started the spi
 Display
 
 Right side
-`#
+```
+#
 ##
 ###
 ##
 #
 Left side
-    #
-  ##
+  #
+ ##
 ###
-  ##
-    #
-Buzz`
+ ##
+  #
+Buzz
+```
 
 Once the washer starts, it will cycle ten times before stopping. Once the washer has stopped, alert the user with a ”Buzz.”
 
